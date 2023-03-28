@@ -2,6 +2,7 @@
 
 # Authors
  1. Emmanuel Bett
+ 2. Edson Kimotho
 
 ## Description
 
