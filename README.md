@@ -18,6 +18,7 @@ SQLite, you will need to make the following changes in the project files:
 
 ## Requirements
 
+
 - Ruby 2.7.4
 - NodeJS (v16), and npm
 - Render account
