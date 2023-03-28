@@ -2,7 +2,12 @@
 
 # Authors
  1. Emmanuel Bett
- 2. Edson Kimotho
+ AIJA-dev
+ 2. Eugene Aija
+
+
+ 2. Edson Kimoth
+ main
 
 ## Description
 
