@@ -1,5 +1,8 @@
 # Project Template: React/Rails API
 
+# Authors
+ 1. Emmanuel Bett
+
 ## Description
 
 This project is scaffolded so that you can build a React frontend and Rails
