@@ -64,3 +64,38 @@
   border-radius: 5px;
   cursor: pointer;
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+  transition: transform .2s;
+  padding: 20px;
+  max-width: 200px;
+  margin-left: 30%;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
