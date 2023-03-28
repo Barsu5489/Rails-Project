@@ -1,0 +1,67 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Technology",
+      "description": "Jobs related to technology"
+    },
+    {
+      "id": 2,
+      "name": "Sales",
+      "description": "Jobs related to sales"
+    }
+  ],
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Software Engineer",
+      "description": "We are looking for a software engineer to join our team",
+      "requirements": "Bachelor's degree in Computer Science, 3+ years experience with React",
+      "location": "San Francisco, CA",
+      "salary": 120000,
+      "date_posted": "2022-03-28",
+      "user_id": 1
+    },
+    {
+      "id": 2,
+      "title": "Sales Representative",
+      "description": "We are looking for a sales representative to join our team",
+      "requirements": "Bachelor's degree in Business Administration, 3+ years experience in sales",
+      "location": "New York, NY",
+      "salary": 80000,
+      "date_posted": "2022-03-28",
+      "user_id": 2
+    }
+  ],
+  "job_categories": [
+    {
+      "id": 1,
+      "job_id": 1,
+      "category_id": 1
+    },
+    {
+      "id": 2,
+      "job_id": 2,
+      "category_id": 2
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "johndoe",
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "johndoe@example.com",
+      "password_digest": "password"
+    },
+    {
+      "id": 2,
+      "username": "janedoe",
+      "first_name": "Jane",
+      "last_name": "Doe",
+      "email": "janedoe@example.com",
+      "password_digest": "password"
+    }
+  ]
+}
+  
