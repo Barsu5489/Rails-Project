@@ -1,4 +1,3 @@
-
 import './App.css';
 import Jobs from './Jobs';
 import Categories from './Categories';
