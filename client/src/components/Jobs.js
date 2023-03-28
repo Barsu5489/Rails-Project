@@ -27,7 +27,7 @@ function Jobs() {
   </div>
   <div className="job-card-footer">
     <p className="job-card-date">Posted 3 days ago</p>
-    <button className="job-card-apply-btn">Apply Now</button>
+    <button className="job-card-apply-btn">Apply Now /  Details</button>
   </div>
 </div>
 

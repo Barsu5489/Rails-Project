@@ -3,6 +3,11 @@
   border-radius: 5px;
   padding: 20px;
   margin-bottom: 20px;
+ 
+  width: 30%;
+  margin:  auto;
+  margin-top: 30px;
+  
 }
 
 .job-card-header {
