@@ -37,16 +37,16 @@ function PostJob() {
                 <form action="" method="post"  onSubmit={handleSubmit}>
         <div className="form-group">
             <label>Title</label>
-        <input type="text" name="title" className="form-control"  id="" placeholder='Enter title' value={title} onChange={e=>setTitle(e.target.value)}/>
+        <input type="text" name="title" className="form-control"  id="" placeholder='Job title' value={title} onChange={e=>setTitle(e.target.value)} />
         </div>
         <div className="form-group">
             <label>Description</label>
-            <textarea className="form-control" name='description' value={description} onChange={(e) => setDescription(e.target.value)} required ></textarea>
+            <textarea className="form-control" name='description' value={description} onChange={(e) => setDescription(e.target.value)} required placeholder='description'></textarea>
             
         </div>
         <div className="form-group">
             <label>Location</label>
-            <input type="name" name="location" className="form-control"  placeholder="project Url"  value={location} onChange={(e)=>setLocation(e.target.value)} required/>
+            <input type="name" name="location" className="form-control"  placeholder="Job Location"  value={location} onChange={(e)=>setLocation(e.target.value)} required/>
         </div>
         <button type="submit" className="btn btn-primary">Post</button>
         {/* <div className="forgot-password">
