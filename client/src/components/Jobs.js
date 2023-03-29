@@ -52,7 +52,7 @@ function handleShowDiv(id){
 
     const divDetail = <div className='job-details-div'>
 
-      <h1>All Details about</h1>
+      <h1>All Details about specific job</h1>
     </div>;
      
     
