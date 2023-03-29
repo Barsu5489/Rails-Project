@@ -249,7 +249,7 @@ text-align: center;
   cursor: pointer;
   border: none;
 }
-.addProject{
+/* .addProject{
   padding: 15px;
   width: 15%;
   background-color: #305747;
@@ -263,7 +263,7 @@ text-align: center;
 .addProject:hover{
 background-color: #3e8e41;
 
-}
+} */
 
 .forgot-password {
   margin-top: 20px;
