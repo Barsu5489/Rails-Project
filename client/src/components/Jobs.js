@@ -1,9 +1,17 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { useEffect } from 'react'
 
 function Jobs() {
     const [jobs, setJobs] = useState([])
     const [id, setId] = useState(null)
+    const [divDetails, setDivDetails] = useState(null)
+    const divRef = useRef(null)
+
+    useEffect(() => {
+      if (divRef.current) {
+        divRef.current.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, [divDetails]);
     useEffect(()=>{
       fetch('http://localhost:3000/jobs')
       .then((r)=> r.json())
@@ -11,26 +19,50 @@ function Jobs() {
           setJobs(jobs)
       })
     },[])
+    useEffect(() => {
+      function handleClickOutside(event) {
+        if (divRef.current && !divRef.current.contains(event.target)) {
+          setId(null);
+        }
+      }
+      document.addEventListener('mousedown', handleClickOutside);
+      return () => {
+        document.removeEventListener('mousedown', handleClickOutside);
+      };
+    }, [divRef]);
     if (jobs === []){
       return
     }
-
-    function handleShowDiv(id){
+    // useEffect(() => {
+    //   const handleClickOutside = (event) => {
+    //     if (divRef.current && !divRef.current.contains(event.target)) {
+    //       setId(null)
+    //     }
+    //   }
+    
+    //   document.addEventListener("mousedown", handleClickOutside)
+    
+    //   return () => {
+    //     document.removeEventListener("mousedown", handleClickOutside)
+    //   }
+    // }, [divRef])
+function handleShowDiv(id){
       console.log(id)
+      setId(id)
 
-      return(
-        <>
-        <div className='job-details-div'>
+    const divDetail = <div className='job-details-div'>
 
-        </div>
-        </>
-      )
-
+      <h1>All Details about</h1>
+    </div>;
+     
+    
+setDivDetails(divDetail)
     }
+    
     // Maping through each job
     const job = jobs.map((job)=>{
       return (
-        <div className="job-card" key={job.id} onClick={()=>handleShowDiv(job.id,job.title,job.description)}>
+        <div className="job-card" key={job.id} onClick={()=>handleShowDiv(job.id,job.title,job.description)}  ref={divRef}>
   <div className="job-card-header">
     <h2 className="job-card-title">{job.title}</h2>
     <p className="job-card-location">{job.location}</p>
@@ -48,11 +80,21 @@ function Jobs() {
       )
     }) 
     console.log(jobs)
+
+ 
   return (
-    <div >
+    <>
+    {id !== null ? (
+        <div className='jobs-container'>
+          <div className='job-card-container'>{job}</div>
+          <div className='job-details-container' ref={divRef}>{divDetails} </div>
+        </div>) : (<div>{job}</div>)}
+    {/* <div >
+     
 {job}
 
-    </div>
+    </div> */}
+    </>
   )
 }
 
