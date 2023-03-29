@@ -36,6 +36,11 @@ ActiveRecord::Schema.define(version: 2023_03_28_115331) do
     t.decimal "salary"
     t.date "date_posted"
     t.integer "user_id"
+    t.string "company_name"
+    t.string "company_phone"
+    t.string "experience"
+    t.string "company_logo"
+    t.integer "category_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
