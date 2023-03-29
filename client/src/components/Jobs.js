@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 
 function Jobs() {
     const [jobs, setJobs] = useState([])
+    const [id, setId] = useState(null)
     useEffect(()=>{
       fetch('http://localhost:3000/jobs')
       .then((r)=> r.json())
@@ -13,10 +14,23 @@ function Jobs() {
     if (jobs === []){
       return
     }
+
+    function handleShowDiv(id){
+      console.log(id)
+
+      return(
+        <>
+        <div className='job-details-div'>
+
+        </div>
+        </>
+      )
+
+    }
     // Maping through each job
     const job = jobs.map((job)=>{
       return (
-        <div className="job-card" key={job.id}>
+        <div className="job-card" key={job.id} onClick={()=>handleShowDiv(job.id,job.title,job.description)}>
   <div className="job-card-header">
     <h2 className="job-card-title">{job.title}</h2>
     <p className="job-card-location">{job.location}</p>
@@ -35,7 +49,7 @@ function Jobs() {
     }) 
     console.log(jobs)
   return (
-    <div>
+    <div >
 {job}
 
     </div>
