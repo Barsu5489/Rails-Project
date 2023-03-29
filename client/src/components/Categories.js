@@ -20,6 +20,7 @@ const categories = category.map((cat)=>{
     <p>{cat.description}</p>
   </div>
 </div>
+
     )
 })
     

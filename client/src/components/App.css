@@ -34,12 +34,12 @@ nav {
   margin-bottom: 20px;
  
   width: 30%;
-  margin:  auto;
+  margin-left:  40%;
   margin-top: 30px;
   
 }
 
-.job-card-header {
+  .job-card-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -93,7 +93,7 @@ nav {
   border-radius: 5px;
   cursor: pointer;
 }
-.grid-container {
+ .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
@@ -127,6 +127,31 @@ nav {
   margin-bottom: 10px;
   text-align: center;
 }
+
+.job-details-container{
+  height: 400px;
+  width: 60px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.jobs-container {
+  display: flex;
+  justify-content: space-around; 
+  gap: 0;
+  /* align-items: flex-start; */
+}
+
+.job-card-container {
+  width: 60%;
+ 
+}
+
+.job-details-container {
+  width: 25%;
+  margin-top: 30px;
+  margin-right: 20%;
+}
+
 
 /* 
 .post-section {
