@@ -61,7 +61,18 @@
       "last_name": "Doe",
       "email": "janedoe@example.com",
       "password_digest": "password"
+    },
+    {
+      "email": "johndoe@example.com",
+      "password": "password",
+      "id": 3
+    },
+    {
+      "email": "coins@coins.com",
+      "first_name": "Emmanuel",
+      "last_name": "Barsulai",
+      "password": "qwerty123",
+      "id": 4
     }
   ]
 }
-  
