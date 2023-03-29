@@ -12,6 +12,7 @@ function Navbar() {
           {/* <NavLink to="/auth">Currently working<br /> on REACT</NavLink> */}
           <NavLink to="/jobs">My Jobs</NavLink>
           <NavLink to="/categories">Categories</NavLink>
+          <NavLink to="/login">Login</NavLink>
           
           <button className='btn-logout'>Log Out</button>
         </div>

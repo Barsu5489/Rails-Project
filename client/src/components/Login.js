@@ -6,6 +6,7 @@ function Login() {
 const [email, setEmail] = useState('')
 const [password, setPassword] = useState('')
 const [error, setError] = useState('')
+//const [userId, setUserId] = useState(null)
 
   function handleLogin(e){
     e.preventDefault(); 
@@ -26,10 +27,10 @@ const [error, setError] = useState('')
         throw new Error('Invalid email or Password')
       }
     }).then((info)=>{
-      setUserId(users.id)
-      localStorage.setItem('userId', users.id)
-      localStorage.setItem('userInfo', users.first_name)
-      localStorage.setItem('userLastName', users.last_name)
+     // setUserId(info.id)
+      localStorage.setItem('userId', info.id)
+      localStorage.setItem('userInfo', info.first_name)
+      localStorage.setItem('userLastName', info.last_name)
 
       redirect('/')
       window.location.reload();

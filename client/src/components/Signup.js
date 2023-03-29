@@ -26,8 +26,6 @@ function Signup() {
             if(res.ok){
                 return res.json()
                 
-            }else{
-                throw new Error('Email already exists')
             }
         }).then((info)=>{
             if(info.error){
