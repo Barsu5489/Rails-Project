@@ -2,7 +2,9 @@ import React from 'react'
 
 function UserHome() {
   return (
-    <div>UserHome</div>
+    <div>
+      <h1>Landing Page in a few</h1>
+    </div>
   )
 }
 
