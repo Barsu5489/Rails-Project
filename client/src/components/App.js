@@ -7,6 +7,7 @@ import UserHome from './UserHome';
 import Navbar from './Navbar';
 import Login from "./Login";
 import Signup from "./Signup";
+import PostJob from "./PostJob";
 
 
 
@@ -21,6 +22,7 @@ function App() {
      <Route path="/categories" element={<Categories />} />
      <Route path="/login" element={<Login/>} />
      <Route path="/signup" element={<Signup/>} />
+     <Route path="/postjob" element={<PostJob/>} />
 
    </Routes>
  </BrowserRouter>

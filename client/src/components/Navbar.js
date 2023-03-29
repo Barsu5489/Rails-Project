@@ -13,6 +13,7 @@ function Navbar() {
           <NavLink to="/jobs">My Jobs</NavLink>
           <NavLink to="/categories">Categories</NavLink>
           <NavLink to="/login">Login</NavLink>
+          <NavLink to="/post">Post</NavLink>
           
           <button className='btn-logout'>Log Out</button>
         </div>
