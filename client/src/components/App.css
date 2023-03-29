@@ -1,3 +1,32 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: #e2e2e2;
+}
+
+.navbar-logo a {
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+.navbar-links a {
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+  font-size: large;
+}
+
 .job-card {
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -99,3 +128,69 @@
   text-align: center;
 }
 
+/* 
+.post-section {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  margin: 0;
+}
+
+.post-date {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.post-content {
+  margin-bottom: 10px;
+}
+
+.post-image {
+  max-width: 100%;
+  margin-top: 10px;
+}
+
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.like-button,
+.comment-button,
+.share-button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.like-button:hover,
+.comment-button:hover,
+.share-button:hover {
+  background-color: #f0f0f0;
+}
+
+*/
