@@ -8,6 +8,7 @@ import Navbar from './Navbar';
 import Login from "./Login";
 import Signup from "./Signup";
 import PostJob from "./PostJob";
+import MyJobs from "./MyJobs";
 
 
 
@@ -23,7 +24,7 @@ function App() {
      <Route path="/login" element={<Login/>} />
      <Route path="/signup" element={<Signup/>} />
      <Route path="/postjob" element={<PostJob/>} />
-
+     <Route path="/myjobs" element={<MyJobs/>} />
    </Routes>
  </BrowserRouter>
   );

@@ -59,7 +59,7 @@ function Signup() {
         </div>
         <button type="submit" className="btn btn-primary">Signup</button>
         <div className="forgot-password">
-        <span><p>Already have an account?</p></span> <p className='link'> <span onClick={()=>redirect('/auth')}>Login!</span></p>
+        <span><p>Already have an account?</p></span> <p className='link'> <span onClick={()=>redirect('/login')} style={{color:'purple'}}>Login!</span></p>
     </div>
         <p style={{color:'red'}}>{error}</p>
         </form>
