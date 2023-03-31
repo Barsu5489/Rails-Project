@@ -11,6 +11,9 @@ Rails.application.routes.draw do
   post "/register", to: "users#create"
   #get "/users", to: "users#show"
   get "/jobs/users/:id", to: "jobs#userjobs"
+  post "users/login", to: "sessions#create"
+  delete "users/logout", to: "sessions#destroy"
+  get "user/me", to: "users#show"
   
   post '/jobs', to: 'jobs#create'
 end
