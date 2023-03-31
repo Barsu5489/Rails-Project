@@ -30,7 +30,7 @@ class JobsController < ApplicationController
       job = Job.find_by(id: params[:id])
       job.update(job_params)
       render json: job, status: :accepted
-  end
+    end
 
  
       
