@@ -30,7 +30,7 @@ function MyJobs() {
   }
 
   function handleSave(id, title, description) {
-    fetch(`http://localhost:3000/jobs`, {
+    fetch(`/jobs/${userId}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json'
@@ -80,7 +80,7 @@ function MyJobs() {
         )}
         <div className="job__footer">
           <ul className="job__skills">
-            <li className="job__skill"><a href="#">{job.repo_url}</a></li>
+            {/* <li className="job__skill"><a href="#">{job.repo_url}</a></li> */}
             <li className="job__skill">work</li>
             <li className="job__skill">focus</li>
           </ul>
