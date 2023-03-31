@@ -19,6 +19,15 @@ class JobsController < ApplicationController
         job = Job.create!(job_params)
         render json: job, status: :created
     end
+
+
+    def update
+      job = Job.find_by(id: params[:id])
+      job.update(job_params)
+      render json: job, status: :accepted
+  end
+
+ 
       
       private
       
