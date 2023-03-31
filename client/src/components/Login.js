@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 function Login() {
   const redirect = useNavigate()
-const [email, setEmail] = useState('')
+const [username, setUsername] = useState('')
 const [password, setPassword] = useState('')
 const [error, setError] = useState('')
 //const [userId, setUserId] = useState(null)
@@ -11,32 +11,38 @@ const [error, setError] = useState('')
   function handleLogin(e){
     e.preventDefault(); 
 
-    fetch('http://localhost:3000/users',{
+    fetch('/users/login',{
       method: 'POST',
       headers:{
         'Content-Type':'application/json'
       },
       body: JSON.stringify({
-        email: email,
+        username: username,
         password: password
       })
     }).then((res)=>{
       if(res.ok){
+        redirect('/')
         return res.json()
-      }else{
-        throw new Error('Invalid email or Password')
+       
       }
-    }).then((info)=>{
+      // else{
+      //   throw new Error('Invalid email or Password')
+      // }
+    })
+    .then((info)=>{
+      console.log(info)
      // setUserId(info.id)
       localStorage.setItem('userId', info.id)
-      localStorage.setItem('userInfo', info.first_name)
-      localStorage.setItem('userLastName', info.last_name)
+      // localStorage.setItem('userInfo', info.first_name)
+      // localStorage.setItem('userLastName', info.last_name)
 
-      redirect('/')
-      window.location.reload();
-    }).catch(error=>{
-      setError(error.message)
+      //redirect('/')
+      // window.location.reload();
     })
+    // .catch(error=>{
+    //   setError(error.message)
+    // })
   }
   return (
     <>
@@ -44,8 +50,8 @@ const [error, setError] = useState('')
             <form action="" method='post' onSubmit={handleLogin}>
             <h1>Login</h1>
             <div className="form-group">
-            <label>Email</label>
-        <input type="email" name="email" className="form-control"  id="" placeholder='email' value={email} onChange={e=>setEmail(e.target.value)}/>
+            <label>Username</label>
+        <input type="name" name="username" className="form-control"  id="" placeholder='username' value={username} onChange={e=>setUsername(e.target.value)}/>
         </div>
         <div className="form-group">
         <label>Password</label>
@@ -53,7 +59,7 @@ const [error, setError] = useState('')
         </div>
         <button type="submit" className="btn btn-primary">Log In</button>
         <div className="forgot-password">
-        <span><p>Don't have an account?</p></span> <p className='link'> <span onClick={()=>redirect('/signup')} style={{color:'purple'}}>Create!</span></p>
+        <span><p>Don't have an account?</p></span> <p className='link'> <span onClick={()=>redirect('/register')} style={{color:'purple'}}>Create!</span></p>
     </div>
         <p style={{color:'red'}}>{error}</p>
         

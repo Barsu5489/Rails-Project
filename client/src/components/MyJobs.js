@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 
 function MyJobs() {
+    
   const redirect = useNavigate() 
   const userId = localStorage.getItem('userId');
   const [jobs, setjob] = useState([])
@@ -10,7 +11,7 @@ function MyJobs() {
   const [editingDescription, setEditingDescription] = useState('');
 
   function handleDelete(id) {
-    fetch(`http://localhost:3000/jobs`, {
+    fetch(`/jobs`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json'
@@ -44,10 +45,12 @@ function MyJobs() {
   }
 
   useEffect(() => {
-    fetch(`http://localhost:3000/jobs`)
+    fetch(`/users/${userId}`)
       .then(res => res.json()
         .then(data => {
-          return setjob(data)
+            console.log(data)
+            console.log(data.jobs)
+          return setjob(data.jobs)
         }
         ))
   }, [])

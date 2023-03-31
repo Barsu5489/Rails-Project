@@ -16,9 +16,14 @@ class JobsController < ApplicationController
     end
 
     def create
-        job = Job.create!(job_params)
+      job = Job.new(job_params)
+      if job.save
         render json: job, status: :created
+      else
+        render json: { errors: job.errors.full_messages }, status: :unprocessable_entity
+      end
     end
+    
 
 
     def update
@@ -44,7 +49,7 @@ class JobsController < ApplicationController
           :company_phone,
           :experience,
           :company_logo,
-          :category_ids # Note the use of plural form here
+          :category_id # Note the use of plural form here
         )
       end
 
