@@ -10,10 +10,13 @@ function Navbar() {
         
         <div className="navbar-links">
           {/* <NavLink to="/auth">Currently working<br /> on REACT</NavLink> */}
-          <NavLink to="/jobs">My Jobs</NavLink>
+          <NavLink to="/jobs">Jobs</NavLink>
           <NavLink to="/categories">Categories</NavLink>
           <NavLink to="/login">Login</NavLink>
           <NavLink to="/postjob">Post</NavLink>
+          <NavLink to="/myjobs">My Jobs</NavLink>
+
+
           
           <button className='btn-logout'>Log Out</button>
         </div>

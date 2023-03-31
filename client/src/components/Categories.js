@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 function Categories() {
     const [category, setCategory] = useState([])
 useEffect(()=>{
-    fetch('http://localhost:3000/categories')
+    fetch('/categories')
     .then((r)=>r.json())
     .then((categories)=>{
         setCategory(categories)

@@ -13,7 +13,7 @@ function Jobs() {
       }
     }, [divDetails]);
     useEffect(()=>{
-      fetch('http://localhost:3000/jobs')
+      fetch('/jobs')
       .then((r)=> r.json())
       .then((jobs)=>{
           setJobs(jobs)

@@ -37,6 +37,18 @@
       "description": "This is a Writing Job",
       "location": "United Kingdom",
       "id": 3
+    },
+    {
+      "title": "hy gfd",
+      "description": "gtyvtyy",
+      "location": "yftyftrc",
+      "id": 4
+    },
+    {
+      "title": "Technical mentor",
+      "description": "Duide students",
+      "location": "Ngong road",
+      "id": 5
     }
   ],
   "job_categories": [
@@ -79,6 +91,30 @@
       "last_name": "Barsulai",
       "password": "qwerty123",
       "id": 4
+    },
+    {
+      "email": "ebarsulai@gmail.com",
+      "first_name": "Emmanuel",
+      "last_name": "MagaTrump",
+      "password": "weefefe",
+      "id": 5
+    },
+    {
+      "email": "ebarsulai@gmail.com",
+      "password": "sssss",
+      "id": 6
+    },
+    {
+      "email": "nicole_price@yost.biz",
+      "first_name": "w",
+      "last_name": "MagaTrump",
+      "password": "123",
+      "id": 7
+    },
+    {
+      "email": "nicole_price@yost.biz",
+      "password": "123",
+      "id": 8
     }
   ]
 }

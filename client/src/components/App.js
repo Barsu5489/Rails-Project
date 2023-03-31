@@ -6,8 +6,9 @@ import Categories from './Categories';
 import UserHome from './UserHome';
 import Navbar from './Navbar';
 import Login from "./Login";
-import Signup from "./Signup";
 import PostJob from "./PostJob";
+import MyJobs from "./MyJobs";
+import Register from "./Register";
 
 
 
@@ -21,9 +22,9 @@ function App() {
      <Route path="/jobs" element={<Jobs />} />
      <Route path="/categories" element={<Categories />} />
      <Route path="/login" element={<Login/>} />
-     <Route path="/signup" element={<Signup/>} />
+     <Route path="/register" element={<Register/>} />
      <Route path="/postjob" element={<PostJob/>} />
-
+     <Route path="/myjobs" element={<MyJobs/>} />
    </Routes>
  </BrowserRouter>
   );
