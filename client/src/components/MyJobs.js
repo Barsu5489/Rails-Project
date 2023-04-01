@@ -11,7 +11,7 @@ function MyJobs() {
   const [editingTitle, setEditingTitle] = useState('');
   const [editingDescription, setEditingDescription] = useState('');
 // console.log(jobId)
-console.log(userId)
+
   function handleDelete(id) {
     fetch(`/jobs`, {
       method: 'DELETE',
