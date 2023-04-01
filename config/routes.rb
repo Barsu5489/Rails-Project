@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   delete "users/logout", to: "sessions#destroy"
   get "user/me", to: "users#show"
   put "/jobs/:id", to: "jobs#update_jobs"
-  
+  patch '/reset_password', to: 'users#reset_password'
   post '/jobs', to: 'jobs#create'
 end
 
