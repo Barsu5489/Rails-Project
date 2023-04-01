@@ -6,7 +6,7 @@ function Jobs() {
     const [id, setId] = useState(null)
     const [divDetails, setDivDetails] = useState(null)
     const divRef = useRef(null)
-
+      console.log(jobs)
     useEffect(() => {
       if (divRef.current) {
         divRef.current.scrollIntoView({ behavior: 'smooth' });
@@ -58,7 +58,7 @@ function handleShowDiv(job){
     <hr/>
     <h4>Requirements:</h4>
     <ul>
-      <li>{job.requirments}</li>
+      <li>{job.requirements}</li>
     </ul>
     <hr/>
     <h4>Location:</h4>

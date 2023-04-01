@@ -2,6 +2,9 @@ import React from 'react'
 import { NavLink } from 'react-router-dom';
 
 function Navbar() {
+  function handleLogout(){
+    fetch("/users/logout")
+  }
   return (
     <><nav>
    <div className="navbar-logo">
@@ -18,7 +21,7 @@ function Navbar() {
 
 
           
-          <button className='btn-logout'>Log Out</button>
+          <button className='btn-logout'onClick={handleLogout}>Log Out</button>
         </div>
       </nav>
   </>

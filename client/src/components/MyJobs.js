@@ -33,7 +33,7 @@ function MyJobs() {
 
   function handleSave(id, title, description) {
     fetch(`/jobs/${id}`, {
-      method: 'PATCH',
+      method: 'PUT',
       headers: {
         'Content-Type': 'application/json'
       },
