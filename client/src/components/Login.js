@@ -33,7 +33,8 @@ const [error, setError] = useState('')
     .then((info)=>{
       console.log(info)
      // setUserId(info.id)
-      localStorage.setItem('userId', info.id)
+      // localStorage.setItem('userId', info.id)
+      localStorage.setItem('jobId', info)
       // localStorage.setItem('userInfo', info.first_name)
       // localStorage.setItem('userLastName', info.last_name)
 
