@@ -38,7 +38,7 @@ function PostJob() {
                 companyLogo:companyLogo,
                 companyPhone:companyPhone,
                 experience:experience,
-                companyLogo:companyLogo
+              
                 
             })
         }).then((res)=>{
