@@ -61,6 +61,7 @@ const [error, setError] = useState('')
         <button type="submit" className="btn btn-primary">Log In</button>
         <div className="forgot-password">
         <span><p>Don't have an account?</p></span> <p className='link'> <span onClick={()=>redirect('/register')} style={{color:'purple'}}>Create!</span></p>
+        <span><p>If forgot-password?</p></span> <p className='link'> <span onClick={()=>redirect('/reset_password')} style={{color:'purple'}}>password-reset!</span></p>
     </div>
         <p style={{color:'red'}}>{error}</p>
         

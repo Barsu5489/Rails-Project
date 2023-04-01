@@ -11,9 +11,16 @@ class UsersController < ApplicationController
       render json: { errors: user.errors.full_messages }, status: :unprocessable_entity
     end
   end
+#reset password
+  def reset_password
+    user = User.find_by(email: params[:email])
+    user.update!(password: params[:password])
+    session[:user_id] = user.id
+    render json: user, status: :created
+  end
   
   def index
-    # get users
+    # get/users
     render json: User.all, status: :ok
   end
 
