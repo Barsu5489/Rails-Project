@@ -62,7 +62,9 @@ function ResetPassword() {
         <button  className="btn btn-primary" type="submit">Reset Password</button>
         {error && <p>{error}</p>}
       </form>
+      <div className="forgot-password">
       <span><p>I remember my password!</p></span> <p className='link'> <span onClick={()=>navigate('/login')} style={{color:'purple'}}>Login!</span></p>
+      </div>
     </div>
   );
 }

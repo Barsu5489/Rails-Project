@@ -24,6 +24,7 @@ const [error, setError] = useState('')
     }).then((res)=>{
       if(res.ok){
         redirect('/')
+        console.log(res)
         return res.json()
        
       }
@@ -32,12 +33,12 @@ const [error, setError] = useState('')
       // }
     })
     .then((info)=>{
-      console.log(info)
-     // setUserId(info.id)
+       console.log(info)
+    //  // setUserId(info.id)
       localStorage.setItem('userId', info.id)
       //localStorage.setItem('jobId', info)
-      // localStorage.setItem('userInfo', info.first_name)
-      // localStorage.setItem('userLastName', info.last_name)
+      localStorage.setItem('userInfo', info.first_name)
+     localStorage.setItem('userLastName', info.last_name)
 
       //redirect('/')
       // window.location.reload();
@@ -75,4 +76,4 @@ const [error, setError] = useState('')
   )
 }
 
-export default ResetPassword
+export default Login

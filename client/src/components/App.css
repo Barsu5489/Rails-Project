@@ -1,9 +1,59 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  background-color: #f9f8f8;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.homeContainer{
+  margin-top: 20px;
+  background-color: #f9f8f8;
+  height: 90vh;
+}
+.homeContainer div{
+  height: 25vh;
+}
+.userImage{
+  text-align: right;
+  margin-right: 40%
+}
+.currentJob{
+  margin-left: 10%;
+}
+.userSummary{
+  display: flex;
+  justify-content: space-around;
+}
+.userSummary p{
+  font-size: x-large;
+}
+
+/* home */
+.homeContainer h1{
+  font-size: 70px;
+}
+.access{
+  margin-left: 15%;
+  font-size: x-large;
+  padding: 9px;
+  background-color:#71a374;
+  border-radius: 3px;
+}
+.access:hover{
+  cursor: pointer;
+  background-color: #4CAF50;
+  transition: background-color 0.3s;
+  
+}
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 10px;
-  background-color: #e2e2e2;
+  background-color:  #f9f8f8;
 }
 
 .navbar-logo a {
