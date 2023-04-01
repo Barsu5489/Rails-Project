@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import ResetPassword from './ResetPassword';
 function Login() {
   const redirect = useNavigate()
 const [username, setUsername] = useState('')
@@ -74,4 +75,4 @@ const [error, setError] = useState('')
   )
 }
 
-export default Login
+export default ResetPassword

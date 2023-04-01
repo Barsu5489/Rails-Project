@@ -9,7 +9,7 @@ import Login from "./Login";
 import PostJob from "./PostJob";
 import MyJobs from "./MyJobs";
 import Register from "./Register";
-import ResetPassword from "./ResetPaswword";
+import ResetPassword from "./ResetPassword";
 
 
 

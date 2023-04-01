@@ -44,7 +44,7 @@ function ResetPassword() {
   }
 
   return (
-    <div>
+    <div className="login-form">
       <h1>Reset Password</h1>
       <form onSubmit={handleSubmit}>
       <div className="form-group">
@@ -62,6 +62,7 @@ function ResetPassword() {
         <button  className="btn btn-primary" type="submit">Reset Password</button>
         {error && <p>{error}</p>}
       </form>
+      <span><p>I remember my password!</p></span> <p className='link'> <span onClick={()=>navigate('/login')} style={{color:'purple'}}>Login!</span></p>
     </div>
   );
 }
