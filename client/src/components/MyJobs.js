@@ -5,11 +5,13 @@ function MyJobs() {
     
   const redirect = useNavigate() 
   const userId = localStorage.getItem('userId');
+  // const [jobId, setJobId] = useState(null)
   const [jobs, setjob] = useState([])
   const [editingId, setEditingId] = useState(null);
   const [editingTitle, setEditingTitle] = useState('');
   const [editingDescription, setEditingDescription] = useState('');
-
+// console.log(jobId)
+console.log(userId)
   function handleDelete(id) {
     fetch(`/jobs`, {
       method: 'DELETE',
@@ -30,7 +32,7 @@ function MyJobs() {
   }
 
   function handleSave(id, title, description) {
-    fetch(`/jobs/${userId}`, {
+    fetch(`/jobs/${id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json'
@@ -50,6 +52,7 @@ function MyJobs() {
         .then(data => {
             console.log(data)
             console.log(data.jobs)
+
           return setjob(data.jobs)
         }
         ))
