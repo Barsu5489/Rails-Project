@@ -9,6 +9,7 @@ import Login from "./Login";
 import PostJob from "./PostJob";
 import MyJobs from "./MyJobs";
 import Register from "./Register";
+import ResetPassword from "./ResetPaswword";
 
 
 
@@ -25,6 +26,7 @@ function App() {
      <Route path="/register" element={<Register/>} />
      <Route path="/postjob" element={<PostJob/>} />
      <Route path="/myjobs" element={<MyJobs/>} />
+     <Route path="/resetpassword" element={<ResetPassword/>} />
    </Routes>
  </BrowserRouter>
   );

@@ -1,10 +1,24 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 function Navbar() {
-  function handleLogout(){
-    fetch("/users/logout")
+const redirect =   useNavigate()
+  const userId = localStorage.getItem('userId');
+  function handleLogout(id){
+    fetch(`/users/logout`,{
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json'
+      }  
+    }).then((res) => {
+      if (res.ok) {
+        redirect('/login')
+      }else{
+        console.log(res)
+      }
+    })
   }
+
   return (
     <><nav>
    <div className="navbar-logo">

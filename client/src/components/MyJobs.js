@@ -14,10 +14,7 @@ function MyJobs() {
 
   function handleDelete(id) {
     fetch(`/jobs`, {
-      method: 'DELETE',
-      headers: {
-        'Content-Type': 'application/json'
-      }
+      method: 'DELETE'
     }).then((res) => {
       if (res.ok) {
         setjob(jobs.filter(job => job.id !== id))
