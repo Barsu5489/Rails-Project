@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+# Project Job Application: React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+ This is a project that  was designed by a group of engineers  from Moringa school based on the emerging technology where employees have to locate their jobs with ease
 
-In the project directory, you can run:
+# Contributors
+1. Emmanuel Bett
+2. Eugene Aija
+3. Edson Kimothi
+4. Emmanuel Barsu
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Table of contents
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [Description](#description)
+- [Contributors](#contributors)
+- [Technologies Used](#technologies-used)
+- [Requirements](#requirements)
+- [Live Link](#live-link)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Description
+The project Job Application on a Jobs Portal Web App that allows users to: View all jobs, post a jop , apply ajob, view categories and make sure that a user signup  before acessing the application  also the user isable to delete the jobs heor she posted and logout of the application
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Frontend- https://job-app-user-interface.vercel.app
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### Technology Used
+![](https://img.shields.io/badge/Github-black)&nbsp;&nbsp;&nbsp;
+- NodeJS (v16), and npm
+- Reactjs
+- Css
+- HTML
+- Vercel
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+See Environment Setup below for instructions on installing these tools if you
+don't already have them.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Setup
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Start by **cloning** (not forking) the project repository and removing
+the remote:
 
-## Learn More
+```console
+$ git clone git@github.com:Barsu5489/Rails-Project.git
+$ cd Rails-Project
+$ git remote rm origin
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+Finally, connect the GitHub remote repository to your local repository and push
+up your code:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* Navigate to the client folder and install the required dependencies
+```
+$ cd client
+$ npm install 
+$ npm update
+```
+* Open a new terminal and start the client
+```
+$ npm start
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+# Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+our website is build with little knowledge in four languages,it is however,open to anyone who would wish to contribute to our project. you can also refer here https://stackoverflow.com/questions/8503559/what-is-linting to learn more and run tests. software methods and tools refer herehttp://www.methodsandtools.com/archive/archive.php?id=33.
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+# License
+Copyright (c) 2022 Emmanuel Bett
 
-### Deployment
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
 
-### `npm run build` fails to minify
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### Author's Information
+- Name: Emmanuel Bett 
+- Email: ebett471@gmil.com
+- [LinkedIn](https://www.linkedin.com/in/emmanuel-bett-415138263/)
+
+
+### Support and contact details
+For any further clarification and support contact:
+
+Email: emmanuel.bett@student.moringaschool.com
+Email: eugeneosu7@gmail.com
+Email: edson.kimotho@student.moringaschool.com
+Email: emmanuel.barsulai@student.moringaschool.com
+
+Show support with ⭐️ if you like this project!:wink::wink:

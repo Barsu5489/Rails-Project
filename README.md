@@ -1,28 +1,55 @@
 # Project Job Application: React/Rails API
 
-# Authors
- 1. Emmanuel Bett
- 2. Eugene Aija
- 3. Edson Kimothi
- 4. Emmanuel Barsu
- 
+
+ This is a project that  was designed by a group of engineers  from Moringa school based on the emerging technology where employees have to locate their jobs with ease
+
+# Contributors
+1. Emmanuel Bett
+2. Eugene Aija
+3. Edson Kimothi
+4. Emmanuel Barsu
+
+
+## Table of contents
+
+- [Description](#description)
+- [Contributors](#contributors)
+- [Technologies Used](#technologies-used)
+- [Requirements](#requirements)
+- [Live Link](#live-link)
+- [Configuration](#Configuration)
+- [Database Creation](#database-creation)
+- [Deployment Instructions](#deployment-instructions)
 
 
 # Description
-Moringa Phase 4 Independent Project on a Jobs Portal Web App that allows users to:
+The project Job Application on a Jobs Portal Web App that allows users to:
 * View various jobs `GET/jobs`
+* View varios jobs `GET/jobs/:id`
 * View various job categories `GET/categories`
 * Create a new job `POST/jobs`
 * Update a details of a specific job `PATCH/jobs`
 * Delete a job `DELETE/jobs`
+* Create a user `POST/users`
+* Delete a user `DELETE/users`
+* Reset-password `PATCH/users`
 
-## Requirements
+
+## Live link
+ Backend- https://japp.onrender.com
+ Frontend- https://job-app-user-interface.vercel.app
 
 
-- Ruby 2.7.4
+### Technology Used
+![](https://img.shields.io/badge/Github-black)&nbsp;&nbsp;&nbsp;![](https://img.shields.io/badge/Ruby-Red)&nbsp;&nbsp;&nbsp;![](https://img.shields.io/badge/Postman-orange)
 - NodeJS (v16), and npm
 - Render account
 - sqlite3
+- Reactjs
+- Css
+- HTML
+- Vercel
+
 
 See Environment Setup below for instructions on installing these tools if you
 don't already have them.
@@ -70,7 +97,7 @@ You can use the following commands to run the application:
 
 - `rails s`: run the backend on [http://localhost:3000](http://localhost:3000)
 - `npm start --prefix client`: run the frontend on
-  [http://localhost:4000](http://localhost:4000)
+ [http://localhost:4000](http://localhost:4000)
 
 
 
@@ -129,11 +156,6 @@ npm i -g npm
 ```
 
 
-# Technologies Used
-* ReactJS
-* CSS3
-* Ruby on Rails
-* SQLite3 Database
 
 
 ## Resources
@@ -142,9 +164,13 @@ npm i -g npm
 - [Render Databases Guide](https://render.com/docs/databases)
 
 
+# Contributing
+
+our website is build with little knowledge in four languages,it is however,open to anyone who would wish to contribute to our project. you can also refer here https://stackoverflow.com/questions/8503559/what-is-linting to learn more and run tests. software methods and tools refer herehttp://www.methodsandtools.com/archive/archive.php?id=33.
+
 
 # License
-Copyright (c) 2022 Moringa School
+Copyright (c) 2022 Emmanuel Bett
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -164,3 +190,20 @@ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
 LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+### Author's Information
+- Name: Emmanuel Bett 
+- Email: ebett471@gmil.com
+- [LinkedIn](https://www.linkedin.com/in/emmanuel-bett-415138263/)
+
+
+### Support and contact details
+For any further clarification and support contact:
+
+Email: emmanuel.bett@student.moringaschool.com
+Email: eugeneosu7@gmail.com
+Email: edson.kimotho@student.moringaschool.com
+Email: emmanuel.barsulai@student.moringaschool.com
+
+Show support with ⭐️ if you like this project!:wink::wink:
