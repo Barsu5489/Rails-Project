@@ -3,10 +3,10 @@ import { useNavigate } from 'react-router-dom'
 
 function UserHome() {
   const user_id = localStorage.getItem('userId');
-
-  const redirect = useNavigate()
   const userInfo = localStorage.getItem('userInfo')
   const userLastName = localStorage.getItem('userLastName')
+  const redirect = useNavigate()
+
   console.log(userInfo)
 
  
@@ -15,7 +15,7 @@ function UserHome() {
     <>
     <div className='homeContainer'>
     <div className='currentJob'>
-    {userInfo ? (<h1> <span style={{color:'Green'}}>{userInfo}</span> <br />Discover</h1>):(<><h1>Create or<br />find opportunities <span className='access' onClick={()=>redirect('/login')}>Get a Job</span></h1> 
+    {user_id ? (<h1> <span style={{color:'Green'}}>{userInfo}</span> <br />Discover</h1>):(<><h1>Create or<br />find opportunities <span className='access' onClick={()=>redirect('/login')}>Get a Job</span></h1> 
     
     </>
     )}
@@ -27,7 +27,7 @@ function UserHome() {
     <div  className='userSummary'>
         
         <p style={{marginTop:'80px'}}>Simplify your job search and job posting with our platform. <br /> Join our community and find the ideal position.</p>
-        {userInfo ?(<h1><span style={{color:'green'}}>{userInfo}</span> <br /> {userLastName}</h1>):(<h1>Find jobs <br /> Post jobs</h1>)}
+        {user_id ?(<h1><span style={{color:'green'}}>{userInfo}</span> <br /> {userLastName}</h1>):(<h1>Find jobs <br /> Post jobs</h1>)}
         
     </div>
     </div>
