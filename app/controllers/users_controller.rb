@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show]
+  # before_action :set_user, only: [:show]
   
   def create
     user = User.new(user_params)
@@ -9,6 +9,13 @@ class UsersController < ApplicationController
     else
       render json: { errors: user.errors.full_messages }, status: :unprocessable_entity
     end
+  end
+
+   # DELETE /users/:id
+   def destroy
+    user = User.find(params[:id])
+    user.destroy
+    app_response(message: "User deleted successfully", status: :ok, data: user)
   end
   
 #reset password

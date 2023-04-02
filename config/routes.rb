@@ -11,11 +11,13 @@ Rails.application.routes.draw do
   post "/register", to: "users#create"
   #get "/users", to: "users#show"
   get "/jobs/users/:id", to: "jobs#userjobs"
+  delete '/users/:id', to: 'users#destroy'
   post "users/login", to: "sessions#create"
-  delete "/users/logout", to: "sessions#destroy"
+  delete "/logout", to: "sessions#destroy"
   get "user/me", to: "users#show"
   put "/jobs/:id", to: "jobs#update_jobs"
   patch '/reset_password', to: 'users#reset_password'
   post '/jobs', to: 'jobs#create'
+  delete '/jobs/:id', to: 'jobs#destroy'
 end
 

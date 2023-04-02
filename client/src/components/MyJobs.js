@@ -13,8 +13,12 @@ function MyJobs() {
 // console.log(jobId)
 
   function handleDelete(id) {
-    fetch(`/jobs`, {
-      method: 'DELETE'
+    fetch(`/jobs/${id}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({id})
     }).then((res) => {
       if (res.ok) {
         setjob(jobs.filter(job => job.id !== id))
