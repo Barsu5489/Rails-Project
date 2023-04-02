@@ -1,7 +1,5 @@
 # Project Job Application: React/Rails API
 
-## Author
- Emmanuel Bett
 
  This is a project that  was designed by a group of engineers  from Moringa school based on the emerging technology where employees have to locate their jobs with ease
 
@@ -192,6 +190,12 @@ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
 LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+### Author's Information
+- Name: Emmanuel Bett 
+- Email: ebett471@gmil.com
+- [LinkedIn](https://www.linkedin.com/in/emmanuel-bett-415138263/)
 
 
 ### Support and contact details
