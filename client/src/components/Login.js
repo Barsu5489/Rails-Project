@@ -12,7 +12,7 @@ const [error, setError] = useState('')
   function handleLogin(e){
     e.preventDefault(); 
 
-    fetch('/users/login',{
+    fetch('/login',{
       method: 'POST',
       headers:{
         'Content-Type':'application/json'
