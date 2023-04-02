@@ -1,5 +1,6 @@
 class JobsController < ApplicationController
     rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
+    rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity_response
 
     def index
         jobs = Job.all
@@ -32,6 +33,13 @@ class JobsController < ApplicationController
       render json: job, status: :accepted
     end
 
+        # DELETE /jobs/:id
+    def destroy
+      job = Job.find(params[:id])
+      job.destroy
+      head :no_content
+    end
+
  
       
       private
@@ -55,5 +63,9 @@ class JobsController < ApplicationController
 
       def render_not_found_response
         render json: { error: "Job not found" }, status: :not_found
+    end
+
+    def render_unprocessable_entity_response(invalid)
+      render json: { errors: invalid.record.errors }, status: :unprocessable_entity
     end
 end

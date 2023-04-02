@@ -7,8 +7,8 @@ function Navbar() {
   const redirect = useNavigate();
 
   function handleLogout() {
-    fetch(`/users/logout`, {
-      method: 'delete',
+    fetch(`/logout`, {
+      method: 'DELETE',
       headers: {
         'Content-Type': 'application/json'
       }  
