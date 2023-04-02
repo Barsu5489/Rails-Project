@@ -36,8 +36,8 @@ The project Job Application on a Jobs Portal Web App that allows users to:
 
 
 ## Live link
- Backend- https://japp.onrender.com
- Frontend- https://job-app-user-interface.vercel.app
+ * Backend- https://japp.onrender.com
+ * Frontend- https://job-app-user-interface.vercel.app
 
 
 ### Technology Used
