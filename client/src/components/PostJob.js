@@ -21,7 +21,7 @@ function PostJob() {
     function handleSubmit(e){
         e.preventDefault()
         
-        fetch(`/jobs`,{
+        fetch(`https://japp.onrender.com/jobs`,{
             method:'POST',
             headers:{
                 'Content-Type': 'application/json'

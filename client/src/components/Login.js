@@ -12,7 +12,7 @@ const [error, setError] = useState('')
   function handleLogin(e){
     e.preventDefault(); 
 
-    fetch('/login',{
+    fetch('https://japp.onrender.com/login',{
       method: 'POST',
       headers:{
         'Content-Type':'application/json'

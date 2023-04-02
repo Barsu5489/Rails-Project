@@ -12,7 +12,7 @@ function Register() {
     const [error, setError] = useState('')
     function handleSubmit(e){
     e.preventDefault()
-        fetch('/register',{
+        fetch('https://japp.onrender.com/register',{
             method: 'POST',
             headers:{
                 'Content-Type':'application/json'

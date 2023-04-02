@@ -13,7 +13,7 @@ function Jobs() {
       }
     }, [divDetails]);
     useEffect(()=>{
-      fetch('/jobs')
+      fetch('https://japp.onrender.com/jobs')
       .then((r)=> r.json())
       .then((jobs)=>{
           setJobs(jobs)
