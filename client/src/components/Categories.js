@@ -8,7 +8,7 @@ function Categories() {
     const [jobCategoryId, setJobCategoryId] = useState(null)
     const [renderJobsInCategory, setRenderJobsInCategoryy] = useState([])
 useEffect(()=>{
-    fetch('/categories')
+    fetch('https://japp.onrender.com/categories')
     .then((r)=>r.json())
     .then((categories)=>{
       console.log(categories)
@@ -32,9 +32,9 @@ function handleDisplayCategories(){
 const jobsUnderCategory = renderJobsInCategory.map((job)=>{
   return (
     <>
-    <div className="card" index={job.id} onClick={handleDisplayCategories}>
+    <div className="card" key={job.id} onClick={handleDisplayCategories}>
   
-    <div class="card-container">
+    <div className="card-container">
     <div className="container">
     <h4 style={{textAlign:'center'}}><b>{job.title}</b></h4>
     <p>{job.description}</p>
@@ -61,7 +61,7 @@ const categories = category.map((cat)=>{
     <p>{cat.description}</p>
   </div>
     </div>
-    <div class="back">
+    <div className="back">
    
       
       <button  style={{marginTop:'30%',marginLeft:'35%'}} className='apply-btn'>View jobs</button>

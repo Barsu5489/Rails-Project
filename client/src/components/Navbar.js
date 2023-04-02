@@ -13,21 +13,27 @@ function Navbar() {
   //const [user_id, setUserId] = useState
   const redirect = useNavigate();
   function handleLogout() {
-    fetch(`/logout`, {
-      method: 'DELETE',
-      headers: {
-        'Content-Type': 'application/json'
-      }  
-    }).then((res) => {
-      if (res.ok) {
-        localStorage.removeItem('userId'); // remove user id from local storage
-        setUserId(null)
-        window.location.reload();
-        redirect('/');
-      } else {
-        console.log(res);
-      }
-    });
+    // fetch(`https://japp.onrender.com/logout`, {
+    //   method: 'DELETE',
+    //   headers: {
+    //     'Content-Type': 'application/json'
+    //   }  
+    // }).then((res) => {
+    //   if (res.ok) {
+    //     localStorage.removeItem('userId'); // remove user id from local storage
+    //     setUserId(null)
+       
+    //     redirect('/');
+    //     window.location.reload();
+    //   } else {
+    //     console.log(res);
+    //   }
+    // });
+    localStorage.removeItem('userId'); // remove user id from local storage
+    setUserId(null)
+   
+    redirect('/');
+    window.location.reload();
     
   }
 function handlePostJob(){

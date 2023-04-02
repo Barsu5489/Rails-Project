@@ -13,12 +13,11 @@ function MyJobs() {
 // console.log(jobId)
 
   function handleDelete(id) {
-    fetch(`/jobs/${id}`, {
+    fetch(`https://japp.onrender.com/jobs`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({id})
+      }
     }).then((res) => {
       if (res.ok) {
         setjob(jobs.filter(job => job.id !== id))
@@ -33,8 +32,8 @@ function MyJobs() {
   }
 
   function handleSave(id, title, description) {
-    fetch(`/jobs/${id}`, {
-      method: 'PUT',
+    fetch(`https://japp.onrender.com/jobs/${id}`, {
+      method: 'PATCH',
       headers: {
         'Content-Type': 'application/json'
       },
@@ -48,7 +47,7 @@ function MyJobs() {
   }
 
   useEffect(() => {
-    fetch(`/users/${userId}`)
+    fetch(`https://japp.onrender.com/users/${userId}`)
       .then(res => res.json()
         .then(data => {
             console.log(data)

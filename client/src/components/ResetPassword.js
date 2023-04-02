@@ -15,7 +15,7 @@ function ResetPassword() {
       return;
     }
 
-    fetch('/reset_password', {
+    fetch('https://japp.onrender.com/reset_password', {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json'
