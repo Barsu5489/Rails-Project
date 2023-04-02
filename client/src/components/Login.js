@@ -41,7 +41,7 @@ const [error, setError] = useState('')
      localStorage.setItem('userLastName', info.last_name)
 
       //redirect('/')
-      // window.location.reload();
+      window.location.reload();
     })
      .catch(error=>{
      setError(error.message)

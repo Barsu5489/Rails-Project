@@ -1,11 +1,17 @@
 import React from 'react'
 import { NavLink, useNavigate } from 'react-router-dom';
-
+import { useState, useEffect } from 'react';
 function Navbar() {
+ 
+  const [user_id, setUserId] = useState(null);
 
-  const user_id = localStorage.getItem('userId');
+  useEffect(() => {
+    const storedUserInfo = localStorage.getItem('userId');
+    setUserId(storedUserInfo);
+  }, []);
+  //const user_id = localStorage.getItem('userId');
+  //const [user_id, setUserId] = useState
   const redirect = useNavigate();
-
   function handleLogout() {
     fetch(`/logout`, {
       method: 'DELETE',
@@ -14,8 +20,10 @@ function Navbar() {
       }  
     }).then((res) => {
       if (res.ok) {
-        localStorage.removeItem(user_id); // remove user id from local storage
-        redirect('/login');
+        localStorage.removeItem('userId'); // remove user id from local storage
+        setUserId(null)
+        window.location.reload();
+        redirect('/');
       } else {
         console.log(res);
       }
