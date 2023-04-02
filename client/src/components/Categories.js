@@ -34,10 +34,13 @@ const jobsUnderCategory = renderJobsInCategory.map((job)=>{
     <>
     <div className="card" index={job.id} onClick={handleDisplayCategories}>
   
+    <div class="card-container">
     <div className="container">
-      <h4><b>{job.title}</b></h4>
-      <p>{job.description}</p>
-    </div>
+    <h4 style={{textAlign:'center'}}><b>{job.title}</b></h4>
+    <p>{job.description}</p>
+    <button style={{marginLeft:'30%'}} className='apply-btn'>Apply</button>
+  </div>
+</div>
   </div> 
   </>
   )
@@ -45,25 +48,26 @@ const jobsUnderCategory = renderJobsInCategory.map((job)=>{
 const categories = category.map((cat)=>{
     return (
   <>
-  {/* {renderJobsInCategory ? ( <div className="card" key={renderJobsInCategory.id} >
-  
-  <div className="container">
-    <h4><b>{c.name}</b></h4>
-    <p>{cat.description}</p>
-  </div>
-</div>):(<div className="card" key={cat.id} onClick={()=>handleJobCategories(cat)}>
-  
-  <div className="container">
-    <h4><b>{cat.name}</b></h4>
-    <p>{cat.description}</p>
-  </div> */}
-{/* </></div>)} */}
+
+
         <div className="card" key={cat.id} onClick={()=>handleJobCategories(cat)}>
   
-  <div className="container">
-    <h4><b>{cat.name}</b></h4>
+        <div class="card-container">
+  <div class="ccard">
+    <div class="front">
+   
+      <div className="container">
+    <h4 style={{textAlign:'center'}}><b>{cat.name}</b></h4>
     <p>{cat.description}</p>
   </div>
+    </div>
+    <div class="back">
+   
+      
+      <button  style={{marginTop:'30%',marginLeft:'35%'}} className='apply-btn'>View jobs</button>
+    </div>
+  </div>
+</div>
 </div> 
 </>
     )

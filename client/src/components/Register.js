@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 function Register() {
     const redirect = useNavigate()
     const [email, setEmail] = useState('')
-    const [password_digest, setPassword] = useState('')
+    const [password, setPassword] = useState('')
     const [first_name, setFirstName] = useState('')
     const [last_name, setLastName] = useState('')
     const [username, setUsername] = useState('')
@@ -22,7 +22,7 @@ function Register() {
                 email:email,
                 first_name:first_name,
                 last_name:last_name,
-                password_digest:password_digest
+                password:password
             })
         }).then((res)=>{
             if(res.ok){
@@ -61,7 +61,7 @@ function Register() {
         </div>
         <div className="form-group">
             <label>Password</label>
-            <input type="password" name='password' className="form-control"  placeholder='password'value={password_digest} onChange={(e)=>setPassword(e.target.value)}  required />
+            <input type="password" name='password' className="form-control"  placeholder='password'value={password} onChange={(e)=>setPassword(e.target.value)}  required />
         </div>
         
         <button type="submit" className="btn btn-primary">Signup</button>

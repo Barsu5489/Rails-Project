@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   #get "/users", to: "users#show"
   get "/jobs/users/:id", to: "jobs#userjobs"
   post "users/login", to: "sessions#create"
-  delete "users/logout", to: "sessions#destroy"
+  delete "/users/logout", to: "sessions#destroy"
   get "user/me", to: "users#show"
   put "/jobs/:id", to: "jobs#update_jobs"
   patch '/reset_password', to: 'users#reset_password'

@@ -97,7 +97,7 @@ setDivDetails(divDetail)
   </div>
   <div className="job-card-footer">
     <p className="job-card-date">Posted 3 days ago</p>
-    <button className="job-card-apply-btn">Apply Now /  Details</button>
+    <button className="job-card-apply-btn"> Details</button>
   </div>
 </div>
 

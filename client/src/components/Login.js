@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import ResetPassword from './ResetPassword';
 function Login() {
   const redirect = useNavigate()
 const [username, setUsername] = useState('')
@@ -23,6 +24,7 @@ const [error, setError] = useState('')
     }).then((res)=>{
       if(res.ok){
         redirect('/')
+        console.log(res)
         return res.json()
        
       }
@@ -31,25 +33,26 @@ const [error, setError] = useState('')
       // }
     })
     .then((info)=>{
-      console.log(info)
-     // setUserId(info.id)
+       console.log(info)
+    //  // setUserId(info.id)
       localStorage.setItem('userId', info.id)
-      localStorage.setItem('jobId', info)
-      // localStorage.setItem('userInfo', info.first_name)
-      // localStorage.setItem('userLastName', info.last_name)
+      //localStorage.setItem('jobId', info)
+      localStorage.setItem('userInfo', info.first_name)
+     localStorage.setItem('userLastName', info.last_name)
 
       //redirect('/')
       // window.location.reload();
     })
-    // .catch(error=>{
-    //   setError(error.message)
-    // })
+     .catch(error=>{
+     setError(error.message)
+   })
   }
   return (
     <>
         <div className="login-form">
             <form action="" method='post' onSubmit={handleLogin}>
             <h1>Login</h1>
+            <p style={{color:'red'}}>{error}</p>
             <div className="form-group">
             <label>Username</label>
         <input type="name" name="username" className="form-control"  id="" placeholder='username' value={username} onChange={e=>setUsername(e.target.value)}/>
@@ -61,10 +64,9 @@ const [error, setError] = useState('')
         <button type="submit" className="btn btn-primary">Log In</button>
         <div className="forgot-password">
         <span><p>Don't have an account?</p></span> <p className='link'> <span onClick={()=>redirect('/register')} style={{color:'purple'}}>Create!</span></p>
-        <span><p>If forgot-password?</p></span> <p className='link'> <span onClick={()=>redirect('/reset_password')} style={{color:'purple'}}>password-reset!</span></p>
+        <span><p>If forgot-password?</p></span> <p className='link'> <span onClick={()=>redirect('/resetpassword')} style={{color:'purple'}}>password-reset!</span></p>
     </div>
-        <p style={{color:'red'}}>{error}</p>
-        
+       
         </form>
         </div>
 
