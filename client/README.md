@@ -1,4 +1,4 @@
-# Project Job Application: React
+# Wera Project Job Application: React
 
 
  This is a project that  was designed by a group of engineers  from Moringa school based on the emerging technology where employees have to locate their jobs with ease
@@ -105,9 +105,9 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ### Support and contact details
 For any further clarification and support contact:
 
-Email: emmanuel.bett@student.moringaschool.com
-Email: eugeneosu7@gmail.com
-Email: edson.kimotho@student.moringaschool.com
-Email: emmanuel.barsulai@student.moringaschool.com
+Email:emmanuel.bett@student.moringaschool.com
+Email:eugeneosu7@gmail.com
+Email:edson.kimotho@student.moringaschool.com
+Email:emmanuel.barsulai@student.moringaschool.com
 
 Show support with ⭐️ if you like this project!:wink::wink:
