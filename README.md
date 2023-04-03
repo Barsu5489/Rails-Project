@@ -1,4 +1,4 @@
-# Project Job Application: React/Rails API
+# Project Wera Job Application: React/Rails API
 
 
  This is a project that  was designed by a group of engineers  from Moringa school based on the emerging technology where employees have to locate their jobs with ease
